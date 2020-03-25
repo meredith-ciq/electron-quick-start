@@ -10,3 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
     replaceText(`${type}-version`, process.versions[type])
   }
 })
+
+const { ipcRenderer } = require('electron');
+window.ipcRenderer = ipcRenderer;
